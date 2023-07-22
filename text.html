@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 浏览器中弹出对话框： 请输入姓名， 页面中输出：刚才输入的姓 -->
+    <!-- <script>
+        let n = prompt();
+        alert(n);
+    </script> -->
+
+    <!-- 让用户输入自己的名字、年龄、性别，再输出到网页 -->
+    <!-- <script>
+        let a = prompt('请输入您的姓名');
+        let b = prompt('请输入您的年龄');
+        let c = prompt('请输入您的性别');
+        document.write(a+" "+b+" "+c);
+    </script> -->
+
+    <!-- 定义一个数组，里面存放星期一、星期二…… 直到星期日（共7天），在控制台输出：星期日 -->
+    <!-- <script>
+        let arr = ['星期一','星期二','星期三','星期四','星期五','星期六','星期日'];
+        console.log(arr[6]);
+    </script> -->
+
+    <!-- 用户输入商品价格和商品数量，以及收货地址，可以自动打印订单信息 -->
+    <!-- <style>
+      h2 {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      th,td,table {
+        border: 1px solid #000;
+      }
+
+      table {
+        /* 合并边框 */
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 900px;
+        height: 200px;
+      }
+
+      td{
+        text-align: center;
+      }
+    </style>
+    <div>
+      <h2>订单确认</h2>
+    </div>
+    <script>
+      let price = +prompt("请输入商品价格：");
+      let num = +prompt("请输入商品数量：");
+      let address = prompt("请输入收获地址：");
+      let total = price * num;
+      document.write(`
+      <table>
+          <tr>
+            <th>商品名称</th>
+            <th>商品价格</th>
+            <th>商品数量</th>
+            <th>总价</th>
+            <th>收货地址</th>
+          </tr>
+          <tr>
+            <td>小米青春版PLUS</td>
+            <td>${price}元</td>
+            <td>${num}</td>
+            <td>${total}元</td>
+            <td>${address}</td>
+          </tr>
+        </table>
+    `);
+    </script> -->
+
+    <!-- 用户输入四个季度的数据，可以生成柱形图 -->
+    <!-- <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 700px;
+        height: 300px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        text-align: center;
+      }
+
+      .box div {
+        display: flex;
+        width: 50px;
+        background-color: pink;
+        /* 按列排列 */
+        flex-direction: column;
+        /* 两边贴边，剩余部分补充 */
+        justify-content: space-between;
+      }
+
+      .box span {
+        margin-top: -20px;
+      }
+
+      .box h4 {
+        margin-bottom: -35px;
+        width: 70px;
+        margin-left: -10px;
+      }
+    </style>
+
+    <div class="box">
+      <div style="height: 100px">
+        <span>100</span>
+        <h4>第一季度</h4>
+      </div>
+      <div style="height: 200px">
+        <span>200</span>
+        <h4>第二季度</h4>
+      </div>
+      <div style="height: 300px">
+        <span>300</span>
+        <h4>第三季度</h4>
+      </div>
+      <div style="height: 100px">
+        <span>100</span>
+        <h4>第四季度</h4>
+      </div>
+    </div>
+
+    <script>      
+        let arr = []
+        for (let i = 1; i <= 4; i++) {
+         arr.push(prompt(`请输入第${i}季度的数据:`))
+        }
+        //   盒子开头
+        document.write(` <div class="box">`)
+        // 盒子中间，利用循环
+        for(let i = 0; i < arr.length; i++) {
+            document.write(`
+              <div style="height: ${arr[i]}px;">
+                <span>${arr[i]}</span>
+                <h4>第${i + 1}季度</h4>
+              </div>
+            `)
+        }
+        // 盒子结尾
+        document.write(` </div>`)
+    </script> -->
+
+    <!-- 用户输入秒数，可以自动转换为时分秒 -->
+    <!-- <script>
+      let n = +prompt(`请输入秒数`);
+      let getTime = function(n) {
+        let h = parseInt(n/60/60%24)
+        let m = parseInt(n/60%60)
+        let s = parseInt(n%60)
+
+        h= h>10 ? h : '0'+h
+        m= m>10 ? m : '0'+m
+        s= s>10 ? s : '0'+s
+        return `计算所得结果是${h}小时，${m}分钟，${s}秒`
+      }
+      let str = getTime(n)
+      document.write(str)
+    </script> -->
+
+
+
+    <!-- 我是feature -->
+
+    <div>我是feature</div>
+  </body>
+</html>

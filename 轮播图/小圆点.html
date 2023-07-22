@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小圆点</title>
+  </head>
+  <body>
+    <!-- 轮播图随机版,当我们刷新页面，页面中的轮播图会显示不同图片以及样式 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .father {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        height: 500px;
+        background: pink;
+        margin: 50px auto;
+      }
+
+      .son {
+        width: 90%;
+        height: 90%;
+        background: url(./images/desktop_6.jpg) no-repeat top center/cover;
+      }
+
+      li {
+        color: white;
+        float: left;
+        width: 10px;
+        height: 10px;
+      }
+    </style>
+    <div class="father">
+      <div class="son">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
